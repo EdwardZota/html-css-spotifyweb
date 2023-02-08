@@ -31,18 +31,18 @@
     background-color: orange;
 }
 
+.debug .aside-bottom{
+    background-color: blue;
+}
+
 .debug footer .box{
     display: inline-block;
 }
-
 
 .debug .box {
     background-color: white;
 }
 
-.debug .border{
-    border: 2px dashed black;
-}
 
 /* Utility */
 
@@ -56,7 +56,7 @@
 
 
 .scroll{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 
@@ -67,7 +67,7 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
-main,aside{
+main{
     height: calc(100vh - 100px);
 }
 
@@ -86,7 +86,18 @@ main,aside{
 aside{
     width: 50px;
     background-color: black;
+    height: calc(100vh - 144px);
+    overflow: hidden;
 }
+
+aside .aside-bottom{
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    width: 50px;
+}
+
+
 
 .content{
     width: calc(100% - 50px);
@@ -140,6 +151,10 @@ footer #top-mid{
     .cta{
         left: 200px;
         width: calc(100% - 200px);
+    }
+
+    aside .aside-bottom{
+        width: 200px;
     }
 
 }
