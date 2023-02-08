@@ -56,7 +56,7 @@
 
 
 .scroll{
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 
@@ -87,7 +87,6 @@ aside{
     width: 50px;
     background-color: black;
     height: calc(100vh - 144px);
-    overflow: hidden;
 }
 
 aside .aside-bottom{
