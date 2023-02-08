@@ -18,6 +18,31 @@
     background-color: aqua;
 }
 
+.debug section ul{
+    background-color: orangered;
+}
+
+.debug .cover-container{
+    background-color: aqua;
+    padding: 10px;
+}
+
+.debug .cover-item{
+    background-color: orange;
+}
+
+.debug footer .box{
+    display: inline-block;
+}
+
+
+.debug .box {
+    background-color: white;
+}
+
+.debug .border{
+    border: 2px dashed black;
+}
 
 /* Utility */
 
@@ -30,6 +55,11 @@
 }
 
 
+.scroll{
+    overflow-y: scroll;
+}
+
+
 
 /* inizio CSS */
 
@@ -37,7 +67,7 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
-main{
+main,aside{
     height: calc(100vh - 100px);
 }
 
@@ -60,6 +90,7 @@ aside{
 
 .content{
     width: calc(100% - 50px);
+    height: 100%;
 }
 
 .content-nav{
@@ -76,10 +107,25 @@ aside{
 
 }
 
+section .cover-item{
+    list-style: none;
+    width: 50%;
+}
+
+section,.content-nav{
+    padding: 0 1rem;
+}
+
 
 footer{
     background-color: #282828;
     height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #top-mid{
+    text-align: center;
 }
 
 @media screen and (min-width:576px){
@@ -96,4 +142,16 @@ footer{
         width: calc(100% - 200px);
     }
 
+}
+
+@media screen and (min-width:768px){
+    section .cover-item{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:992px){
+    section .cover-item{
+        width: calc(100% / 6);
+    }
 }
