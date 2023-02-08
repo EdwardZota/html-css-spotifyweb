@@ -97,6 +97,14 @@ aside .aside-bottom{
 }
 
 
+aside #playlist li ul{
+    height: 100%;
+    overflow-y: scroll;
+}
+aside .aside-nav{
+    overflow: hidden;
+}
+
 
 .content{
     width: calc(100% - 50px);
