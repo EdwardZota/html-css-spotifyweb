@@ -187,11 +187,89 @@ footer{
     height: 100px;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    padding: 0 7px;
+}
+
+footer .title{
+}
+
+footer .left{
+    align-items: center;
+}
+
+footer .left span {
+    color: #6a6a6a;
+}
+
+footer img{
+    height: 35px;
+    margin-right: 7px;
+}
+
+footer h5{
+    font-size: 15px;
+}
+
+footer .title span{
+    font-size: 13px;
+}
+
+footer #btn i{
+    padding-left: 10px;
 }
 
 footer #top-mid{
     text-align: center;
+    font-size: 20px;
+    margin: -15px 0 15px;
 }
+
+footer #top-mid i:nth-child(3){
+    padding: 0 5px;
+    font-size: 25px;
+}
+
+footer #top-mid i:nth-child(2n+2){
+    padding: 0 5px;
+}
+
+footer #lower-mid span{
+    padding: 0 10px;
+}
+
+
+footer .charge-bar{
+    align-self: center;
+}
+
+footer .charge-bar .behind{
+    background-color: #5a5a5a;
+    position: relative;
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+footer .charge-bar .front{
+    background-color: #c1c1c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+footer .charge-bar.volume .behind{
+    width: 30px;
+}
+
+footer .right i{
+    padding-right: 10px;
+}
+
+
 
 @media screen and (min-width:576px){
     aside{
@@ -207,6 +285,24 @@ footer #top-mid{
         width: calc(100% - 200px);
     }
 
+    footer img{
+        height: 50px;
+    }
+    
+    footer #btn {
+        padding-left: 25px;
+    }
+
+    
+    footer #top-mid i:nth-child(3){
+        padding: 0 10px;
+    }
+
+    footer #top-mid i:nth-child(2n+2){
+        padding: 0 10px;
+    }
+
+    
 
 }
 
@@ -214,10 +310,26 @@ footer #top-mid{
     section .cover-item{
         width: 25%;
     }
+
+    footer .charge-bar .behind{
+        width: 200px;
+    }
+
+    footer .charge-bar.volume .behind{
+        width: 80px;
+    }
 }
 
 @media screen and (min-width:992px){
     section .cover-item{
         width: calc(100% / 6);
+    }
+
+    footer .charge-bar .behind{
+        width: 300px;
+    }
+
+    footer .charge-bar.volume .behind{
+        width: 100px;
     }
 }

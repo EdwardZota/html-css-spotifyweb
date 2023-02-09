@@ -210,36 +210,48 @@
     </main>
 
     <footer class="d-flex">
-        <div id="left-footer">
-            <div class="box">image</div>
-            <div class="box">music-name</div>
-            <div class="box">heart</div>
-            <div class="box">folder</div>
-
+        <div class="left d-flex">
+            <img src="img/sinister.jpeg" alt="sinister">
+            <div class="title">
+                <h5>Sinister</h5>
+                <span>Brano Nome</span>
+            </div>
+            <span id="btn" >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </span>
 
         </div>
-        <div id="middle-footer">
+        <div>
             <div id="top-mid">
-                <div class="box">mix</div>
-                <div class="box">back</div>
-                <div class="box">play</div>
-                <div class="box">next</div>
-                <div class="box">repeat</div>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
 
             </div>
-            <div id="lower-mid" >
-                <div class="box">actual-time</div>
-                <div class="box">charge-bar</div>
-                <div class="box">full-time</div>
+            <div id="lower-mid" class="d-flex" >
+                <span>0:25</span>
+                <div class="charge-bar">
+                    <div class="behind">
+                        <div class="front"></div>
+                    </div>
+                </div>
+                <span>4:35</span>
 
             </div>
 
         </div>
-        <div id="right-footer">
-            <div class="box">3bars</div>
-            <div class="box">monitor</div>
-            <div class="box">volume</div>
-            <div class="box">charge-bar</div>
+        <div class="right d-flex" >
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="charge-bar volume">
+                <div class="behind">
+                    <div class="front"></div>
+                </div>
+            </div>
 
 
         </div>
