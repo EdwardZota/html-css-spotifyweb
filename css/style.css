@@ -7,17 +7,6 @@
 /* Debug*/
 
 
-.debug .container{
-    background-color: peru;
-}
-
-.debug section ul{
-    background-color: orangered;
-}
-
-.debug .cover-item{
-    background-color: orange;
-}
 
 .debug .aside-bottom{
     background-color: blue;
@@ -128,7 +117,7 @@ aside .playlist-main ul{
 .content-nav a{
     text-decoration: none;
     color: #7d7f84;
-
+    font-weight: 700;
 }
 
 
@@ -151,13 +140,45 @@ aside .playlist-main ul{
 
 }
 
+
+section h2{
+    color: white;
+    margin: 20px 0 5px;
+}
+
+section h4{
+    color: white;
+    margin: 7px 0;
+}
+
+section>ul{
+    margin-top: 15px;
+}
+
 section .cover-item{
     list-style: none;
     width: 50%;
+    text-align: center;
+    padding: 10px;
 }
+
 
 section,.content-nav{
     padding: 0 1rem;
+}
+
+
+.cover-container img {
+    width: 100%;
+}
+
+section span{
+    color: #7a7d81;
+}
+
+section:last-child .cover-container img{
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 
