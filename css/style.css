@@ -7,20 +7,6 @@
 /* Debug*/
 
 
-
-.debug .aside-bottom{
-    background-color: blue;
-}
-
-.debug footer .box{
-    display: inline-block;
-}
-
-.debug .box {
-    background-color: white;
-}
-
-
 /* Utility */
 
 .d-flex{
@@ -34,6 +20,10 @@
 
 .scroll{
     overflow-y: scroll;
+}
+
+.d-none{
+    display: none;
 }
 
 
@@ -53,23 +43,24 @@ main{
 /* aside*/
 /* da sistemare*/
 aside{
-    width: 50px;
+    width: 60px;
     background-color: black;
     height: calc(100vh - 100px);
     flex-direction: column;
-    min-height: 200px;
+    min-height: 120px;
     overflow: hidden;
+    padding: 0 13px;
 }
 
 aside .aside-top{
-    height: calc(100% - 100px);
+    height: calc(100% - 70px);
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 aside .aside-bottom{
-    height: 100px;
+    height: 70px;
 }
 
 aside .aside-nav{
@@ -90,14 +81,37 @@ aside .playlist-main ul{
     overflow-y: scroll;
 }
 
+aside #logo img{
+    width: 100%;
+    margin: 5px 0 10px;
+}
+
+.aside-nav ul:first-child li{
+    padding-top: 5px;
+}
+
+
+.aside-bottom .profil img{
+    background-color: #808080;
+    border-radius: 50%;
+}
+
+.aside-bottom .install{
+    text-align: center;
+}
+
+.aside-bottom .install img{
+    width: 20px;
+}
+
 /*fine aside*/
 
 .cta{
     position: fixed;
     top: 0;
-    left: 50px;
+    left: 60px;
     background-color: rgba(0, 0, 0, 0.3);
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     height: 80px;
     z-index: 999;
     text-align: right;
@@ -122,7 +136,7 @@ aside .playlist-main ul{
 
 
 .content{
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     height: 100%;
 }
 
@@ -302,7 +316,59 @@ footer .right i{
         padding: 0 10px;
     }
 
+    #logo img:first-child{
+        display: none;
+    }
+
+    #logo img:last-child{
+        margin: 20px 0;
+    }
+
+    .d-none{
+        display: inline-block;
+    }
+
+    .aside-top img{
+        width: 30px;
+    }
+
     
+    aside span,.playlist-main ul{
+        color: #2a2a2a;
+        font-weight: 900;
+    }
+
+    .playlist-main h3{
+        color: white;
+        padding-top: 20px;
+    }
+
+    .aside-bottom .profil{
+        border-top: 1px solid #717171;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .aside-bottom .profil img{
+        width: 30px;
+    }
+
+    .aside-bottom img{
+        margin-right: 10px;
+    }
+
+    .aside-bottom .install{
+        text-align: left;
+    }
+
+    
+    aside .aside-top{
+        height: calc(100% - 85px);
+    }
+
+    aside .aside-bottom{
+        height: 85px;
+    }
 
 }
 
