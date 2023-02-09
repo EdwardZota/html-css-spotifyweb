@@ -69,6 +69,7 @@ html{
 
 main{
     height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 .cta{
@@ -83,27 +84,41 @@ main{
     line-height: 80px;
 }
 
+/* aside*/
+
 aside{
     width: 50px;
     background-color: black;
-    height: calc(100vh - 144px);
+    height: calc(100vh - 100px);
+    flex-direction: column;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+aside .aside-top{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 aside .aside-bottom{
-    position: fixed;
-    bottom: 100px;
-    left: 0;
-    width: 50px;
+    height: 100px;
 }
 
-
-aside #playlist li ul{
-    height: 100%;
-    overflow-y: scroll;
-}
 aside .aside-nav{
     overflow: hidden;
 }
+
+aside .playlsit-main{
+    display: flex;
+    flex-direction: column;
+}
+
+aside .playlist-main ul{
+    overflow-y: scroll;
+}
+
 
 
 .content{
@@ -160,9 +175,6 @@ footer #top-mid{
         width: calc(100% - 200px);
     }
 
-    aside .aside-bottom{
-        width: 200px;
-    }
 
 }
 
