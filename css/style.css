@@ -130,6 +130,20 @@ aside #logo img{
     font-weight: 700;
 }
 
+.content-nav ul li{
+    position: relative;
+}
+
+.content-nav ul li:nth-child(1)::before{
+    content: "";
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    left: 43px;
+    height: 3px;
+    width: 40px;
+}
+
 
 .content{
     width: calc(100% - 60px);
@@ -337,6 +351,24 @@ footer .right i{
         padding-top: 10px;
     }
 
+    .aside-nav>ul li:first-child span{
+        color: white;
+    }
+
+    .aside-nav>ul li{
+        position: relative;
+    }
+    
+    .aside-nav>ul::after{
+        content: "";
+        background-color: yellowgreen;
+        position: absolute;
+        top: 98px;
+        left: 0;
+        height: 40px;
+        width: 3px;
+    }
+
     
     aside span,.playlist-main ul{
         color: #2a2a2a;
@@ -346,6 +378,11 @@ footer .right i{
     .playlist-main h3{
         color: white;
         padding-top: 20px;
+    }
+
+    .aside-bottom .profil,.aside-bottom .install{
+        display: flex;
+        align-items: center;
     }
 
     .aside-bottom .profil{
