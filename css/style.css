@@ -6,25 +6,13 @@
 
 /* Debug*/
 
-.debug main{
-    background-color: sienna;
-}
 
 .debug .container{
     background-color: peru;
 }
 
-.debug .content-nav ul{
-    background-color: aqua;
-}
-
 .debug section ul{
     background-color: orangered;
-}
-
-.debug .cover-container{
-    background-color: aqua;
-    padding: 10px;
 }
 
 .debug .cover-item{
@@ -70,22 +58,11 @@ html{
 main{
     height: calc(100vh - 100px);
     overflow: hidden;
-}
-
-.cta{
-    position: fixed;
-    top: 0;
-    left: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: calc(100% - 50px);
-    height: 80px;
-    z-index: 999;
-    text-align: right;
-    line-height: 80px;
+    background-color: #141922;
 }
 
 /* aside*/
-
+/* da sistemare*/
 aside{
     width: 50px;
     background-color: black;
@@ -108,17 +85,51 @@ aside .aside-bottom{
 
 aside .aside-nav{
     overflow: hidden;
-}
-
-aside .playlsit-main{
     display: flex;
     flex-direction: column;
 }
 
+aside .playlist-main{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 aside .playlist-main ul{
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
 }
 
+/*fine aside*/
+
+.cta{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: calc(100% - 50px);
+    height: 80px;
+    z-index: 999;
+    text-align: right;
+    line-height: 80px;
+}
+
+.content .cta a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 7px 30px;
+    margin-right: 25px;
+    font-size: 12px;
+}
+
+.content-nav a{
+    text-decoration: none;
+    color: #7d7f84;
+
+}
 
 
 .content{
@@ -127,7 +138,7 @@ aside .playlist-main ul{
 }
 
 .content-nav{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 .content-nav ul{
@@ -136,7 +147,7 @@ aside .playlist-main ul{
 
 .content-nav li{
     list-style: none;
-    padding: 20px;
+    padding: 15px 10px 10px;
 
 }
 
