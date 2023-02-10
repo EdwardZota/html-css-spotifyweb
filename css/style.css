@@ -46,39 +46,32 @@ aside{
     width: 60px;
     background-color: black;
     height: calc(100vh - 100px);
-    flex-direction: column;
     min-height: 120px;
-    overflow: hidden;
     padding: 0 13px;
 }
 
-aside .aside-top{
-    height: calc(100% - 70px);
+aside,aside .aside-top,aside .aside-nav,aside .playlist-main ul{
     display: flex;
     flex-direction: column;
+}
+
+aside,aside .aside-top,aside .aside-nav{
     overflow: hidden;
+}
+
+
+aside .aside-top{
+    height: calc(100% - 70px);
 }
 
 aside .aside-bottom{
     height: 70px;
 }
 
-aside .aside-nav{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
 
-aside .playlist-main{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-aside .playlist-main ul{
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
+aside .playlist-main ul a,aside .playlist-main span a{
+    text-decoration: none;
+    color: #575757;
 }
 
 aside #logo img{
@@ -115,13 +108,14 @@ aside #logo img{
 }
 
 .content .cta a{
-    color: white;
     text-decoration: none;
+    color: white;
     border: 1px solid white;
     border-radius: 25px;
     padding: 7px 30px;
     margin-right: 25px;
     font-size: 12px;
+    transition: font-size 1s;
 }
 
 .content-nav a{
@@ -186,15 +180,39 @@ section .cover-item{
     padding: 10px;
 }
 
-
 section,.content-nav{
     padding: 0 1rem;
 }
 
-
 .cover-container img {
     width: 100%;
+    display: block;
 }
+
+.container-img{
+    position: relative;
+}
+
+.container-img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.container-img .overlay i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}
+
 
 section span{
     color: #7a7d81;
@@ -202,6 +220,10 @@ section span{
 
 section:last-child .cover-container img{
     object-fit: cover;
+    border-radius: 50%;
+}
+
+section:last-child .container-img .overlay{
     border-radius: 50%;
 }
 
@@ -252,6 +274,7 @@ footer #top-mid{
 footer #top-mid i:nth-child(3){
     padding: 0 5px;
     font-size: 25px;
+    transition: transform 1s;
 }
 
 footer #top-mid i:nth-child(2n+2){
@@ -289,10 +312,64 @@ footer .charge-bar.volume .behind{
     width: 30px;
 }
 
+footer .charge-bar .circle-point{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: none;
+    
+}
+
 footer .right i{
     padding-right: 10px;
 }
 
+
+
+/*************************
+    Hover section
+***************************/
+.content .cta a:hover {
+    font-size: 16px;
+}
+
+.content-nav li:hover a,.aside-nav li:hover span,.playlist-main li:hover a,footer #btn i:hover{
+    color: white;
+}
+
+.playlist-main span:first-child:hover .fa-solid{
+    background-color: white;
+}
+
+.container-img .overlay:hover{
+    opacity: 1;
+}
+
+footer .title span:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer #top-mid i:nth-child(3):hover{
+    transform: scale(1.3);
+}
+
+footer .charge-bar:hover .circle-point{
+    display: block;
+}
+
+footer .charge-bar:hover .front{
+    background-color: yellowgreen;
+}
+
+
+/**************************
+    fine hover
+***************************/
 
 
 @media screen and (min-width:576px){
@@ -412,6 +489,12 @@ footer .right i{
         height: 85px;
     }
 
+    aside .playlist-main{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
     .playlist-main span i{
         background-color: #a3a3a3;
         font-size: 25px;
@@ -419,6 +502,23 @@ footer .right i{
         margin: 10px 10px 0 0;
     }
 
+    /*************************
+        Hover section
+    ***************************/
+
+    .playlist-main span:hover a,.aside-bottom .install:hover span{
+        color: white;
+    }
+    
+    .playlist-main span:hover i{
+        background-color: white;
+        color: black;
+    }
+
+
+    /**************************
+        fine hover
+    ***************************/
 
 }
 
