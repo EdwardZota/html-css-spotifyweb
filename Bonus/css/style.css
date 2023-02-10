@@ -395,12 +395,28 @@ footer .charge-bar:hover .front{
 
 /* 3 bonus*/
 
-.charge-bar .front{
+footer #lower-mid .charge-bar .front{
     animation: charge 20s infinite linear;
 }
 
 
 @keyframes charge{
+    0%{
+        width: 0%;
+
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+
+footer .right .charge-bar .front{
+    animation: volume 20s infinite linear;
+}
+
+
+@keyframes volume{
     0%{
         width: 0%;
 
@@ -447,6 +463,10 @@ footer .charge-bar:hover .front{
     }
 
 }
+
+/* 4 bonus */
+
+
 
 /***************************
     Fine Bonus
