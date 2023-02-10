@@ -466,6 +466,22 @@ footer .right .charge-bar .front{
 
 /* 4 bonus */
 
+@media screen and (max-width:514px){
+    footer #btn,footer .right .charge-bar,footer #top-mid i:first-child,footer #top-mid i:last-child{
+        display: none;
+    }
+
+    .content-nav ul{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        align-items: center;
+    }
+
+    .content-nav ul li{
+        text-align: center;
+    }
+
+}
 
 
 /***************************
